@@ -31,4 +31,4 @@ def get_response_gpt(prompt):
 
 # Query Chat GPT with our prompt
 if __name__ == "__main__":
-    get_response_gpt(sys.argv[1])
+    print(get_response_gpt(sys.argv[1]))

@@ -1,5 +1,11 @@
 # OS allows us to retrieve our environment variables
 import os
+from os.path import join, dirname
+from dotenv import load_dotenv
+
+# Load variables from .env
+dotenv_path = join(dirname(__file__), ".env")
+load_dotenv(dotenv_path)
 
 # All the program constants
 class CONST:
